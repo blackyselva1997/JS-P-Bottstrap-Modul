@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Modul JS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #252424;
+        }
+        .container {
+            width: 30%;
+            margin: auto;
+        }
+        .box {
+            border: 1px solid #a7a4a4;
+            border-radius: 5px;
+            margin-top: -220px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .active .box {
+            margin-top: 0;
+            transition: all 1s;
+        }
+        .hed h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 14px;
+        }
+        .hed span {
+            font-size: 20px;
+            color: #6c757d;
+        }
+        .hed span:hover {
+            cursor: pointer;
+            color: #5c636a;
+        }
+        .text {
+            text-align: left;
+            padding: 10px;
+            border-top: 1px solid #a7a4a4;
+            border-bottom: 1px solid #a7a4a4;
+        }
+        .btn {
+            display: flex;
+            justify-content: right;
+            padding: 15px 14px;
+            gap: 10px;
+        }
+        .btn button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 3px solid transparent;
+            font-size: 17px;
+        }
+        .btn2:hover {
+            cursor: pointer;
+            background-color: #0b5ed7;
+        }
+        .btn1:hover {
+            cursor: pointer;
+            background-color: #5c636a;
+        }
+        .btn1 {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .btn2 {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+        #btnn {
+            padding: 20px;
+            position: fixed;
+            top: 400px;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            border-radius: 10px;
+        }
+        #btnn:hover {
+            cursor: pointer;
+            box-shadow: 0 0 3px 10px greenyellow;
+            color: greenyellow;
+            transition: all 0.5s;
+            border: 3px solid #4df5de;
+            
+        }
+        .fix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            height: 80vh;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="hed">
+                            <h3>Modal title <span id="span">X</span></h3>
+                        </div>
+                        <div class="text">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="btn">
+                            <button class="btn1" id="btn1">Close</button>
+                            <button class="btn2">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="fix">
+        <button id="btnn">Launch</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
